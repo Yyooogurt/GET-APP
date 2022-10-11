@@ -603,7 +603,7 @@ body {
   margin: 0px 100px 0px 0px;
   background-size: 42px 42px;
   background-repeat: no-repeat;
-  background-image: url("/img/icons/logo.svg");
+  background-image: url("../img/icons/logo.svg");
   background-position: center center;
   width: 42px;
   height: 42px;
@@ -806,7 +806,7 @@ body {
 }
 
 .header-button::after {
-  content: url("/img/icons/arrow-head.svg");
+  content: url("../img/icons/arrow-head.svg");
   width: 18px;
   display: block;
   margin: 0px 0px 0px 19px;
@@ -823,7 +823,7 @@ body {
   height: 524px;
   background-size: 1050px 524px;
   background-repeat: no-repeat;
-  background-image: url("/img/icons/big-image.svg");
+  background-image: url("./img/icons/big-image.svg");
 }
 
 .header-button_insta {
@@ -951,7 +951,7 @@ body {
 }
 
 .form-button::after {
-  content: url("/img/icons/arrow-head.svg");
+  content: url("./img/icons/arrow-head.svg");
   width: 18px;
   display: block;
   margin: 0px 0px 0px 19px;
@@ -993,7 +993,7 @@ body {
 .md-close {
   background-size: 16px 16px;
   background-repeat: no-repeat;
-  background-image: url(/img/icons/close.svg);
+  background-image: url(./img/icons/close.svg);
   background-position: center center;
   width: 16px;
   height: 16px;
@@ -1141,27 +1141,27 @@ figure {
 }
 
 .swiper-image_macbook {
-  background-image: url(/img/icons/macbook.svg);
+  background-image: url(./img/icons/macbook.svg);
 }
 
 .swiper-image_ipad {
-  background-image: url(/img/icons/ipad.svg);
+  background-image: url(./img/icons/ipad.svg);
 }
 
 .swiper-image_airpods {
-  background-image: url(/img/icons/airpods.svg);
+  background-image: url(./img/icons/airpods.svg);
 }
 
 .swiper-image_iphone {
-  background-image: url(/img/icons/iphone.svg);
+  background-image: url(./img/icons/iphone.svg);
 }
 
 .swiper-image_accessories {
-  background-image: url(/img/icons/charge.svg);
+  background-image: url(./img/icons/charge.svg);
 }
 
 .swiper-image_watch {
-  background-image: url(/img/icons/watch.svg);
+  background-image: url(./img/icons/watch.svg);
 }
 
 .swiper-buttons {
@@ -1185,14 +1185,14 @@ figure {
   font-size: 0px;
   width: 19px;
   height: 16px;
-  content: url("/img/icons/arrow-prev.svg");
+  content: url("./img/icons/arrow-prev.svg");
 }
 
 .swiper-button-next:after {
   font-size: 0px;
   width: 19px;
   height: 16px;
-  content: url("/img/icons/arrow-next.svg");
+  content: url("./img/icons/arrow-next.svg");
 }
 
 .swiper-pagination {
@@ -1317,27 +1317,27 @@ figure {
 }
 
 .secrets-img_trade {
-  background-image: url("/img/icons/trade.svg");
+  background-image: url("./img/icons/trade.svg");
 }
 
 .secrets-img_price {
-  background-image: url("/img/icons/price.svg");
+  background-image: url("./img/icons/price.svg");
 }
 
 .secrets-img_product {
-  background-image: url("/img/icons/product.svg");
+  background-image: url("./img/icons/product.svg");
 }
 
 .secrets-img_help {
-  background-image: url("/img/icons/help.svg");
+  background-image: url("./img/icons/help.svg");
 }
 
 .secrets-img_support {
-  background-image: url("/img/icons/support.svg");
+  background-image: url("./img/icons/support.svg");
 }
 
 .secrets-img_guarantee {
-  background-image: url("/img/icons/guarantee.svg");
+  background-image: url("./img/icons/guarantee.svg");
 }
 
 .service .content {
@@ -1348,7 +1348,7 @@ figure {
 .service-img {
   background-size: 90px 137px;
   background-repeat: no-repeat;
-  background-image: url("/img/icons/service.svg");
+  background-image: url("./img/icons/service.svg");
   background-position: center center;
   width: 90px;
   height: 137px;
@@ -1409,7 +1409,7 @@ figure {
   background-size: 320px 315px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(/img/icons/emoji.png);
+  background-image: url(./img/icons/emoji.png);
   opacity: 1;
   animation: ani 1.5s forwards;
 }
@@ -1516,15 +1516,15 @@ figure {
 }
 
 .footer-media__link_telegram {
-  background-image: url("/img/icons/telegram.svg");
+  background-image: url("./img/icons/telegram.svg");
 }
 
 .footer-media__link_viber {
-  background-image: url("/img/icons/viber.svg");
+  background-image: url("./img/icons/viber.svg");
 }
 
 .footer-media__link_instagram {
-  background-image: url("/img/icons/insta.svg");
+  background-image: url("./img/icons/insta.svg");
 }
 
 .label-for-check {
