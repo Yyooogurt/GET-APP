@@ -1,0 +1,2060 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1px; /*for using REM units*/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #222;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.preloader-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: #000;
+  cursor: pointer;
+}
+.preloader-page .loader__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.preloader-page .loader__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: calc(100% + 0.1vw);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Inter";
+  margin: 0;
+}
+.preloader-page .loader__circle {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  -webkit-animation-name: SpinAround;
+  animation-name: SpinAround;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.preloader-page .loader__circle:nth-of-type(1) {
+  animation-direction: reverse;
+  -webkit-transform-origin: 49.6% 49.8%;
+  -ms-transform-origin: 49.6% 49.8%;
+  transform-origin: 49.6% 49.8%;
+  -webkit-box-shadow: 0px 4px 1px #bd62d5;
+  box-shadow: 0px 4px 1px #bd62d5;
+}
+.preloader-page .loader__circle:nth-of-type(2) {
+  -webkit-transform-origin: 49.5% 48.8%;
+  -ms-transform-origin: 49.5% 48.8%;
+  transform-origin: 49.5% 48.8%;
+  -webkit-box-shadow: 0px 4px 1px #623ee8;
+  box-shadow: 0px 4px 1px #623ee8;
+}
+.preloader-page .body {
+  width: 100%;
+  margin: -0.5rem 0 0 0;
+  position: relative;
+}
+.preloader-page .shape {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  fill: #000;
+}
+@-webkit-keyframes SpinAround {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes SpinAround {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.menu {
+  position: fixed;
+  color: #cdcdcd;
+  font-family: "Gilroy-Light";
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  min-width: 1024px;
+  height: 57px;
+  max-height: 57px;
+  transition: all 0.5s ease-in;
+}
+.menu a {
+  font-size: 14px;
+}
+
+.menu::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #515151;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  position: absolute;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1244px;
+  padding: 0 22px;
+}
+
+.menu-header {
+  display: none;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.menu-list {
+  cursor: default;
+  width: auto;
+  height: 57px;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu-list__item {
+  z-index: 5;
+}
+
+.menu-list__item:hover {
+  color: #9051df;
+  transition: all 0.1s ease-out;
+}
+
+.menu-list__logo-link {
+  display: block;
+  margin: 0px 100px 0px 0px;
+  background-size: 42px 42px;
+  background-repeat: no-repeat;
+  background-image: url("/img/icons/logo.svg");
+  background-position: center center;
+  width: 42px;
+  height: 42px;
+}
+
+.menu-list__phone-link {
+  margin: 0px 0px 0px 235px;
+}
+
+.menu_mobile {
+  transition: all 0.5s ease-in;
+  background: #0a0a0a;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+#container {
+  z-index: 10;
+  position: absolute;
+  top: 56px;
+  right: 0px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
+
+#container:before {
+  content: "";
+  width: 100%;
+  height: 690px;
+  position: absolute;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(59px);
+  backdrop-filter: saturate(180%) blur(59px);
+}
+
+.container_open {
+  max-height: 690px !important;
+  -webkit-transition: all 0.5s ease-in !important;
+  -o-transition: all 0.5s ease-in !important;
+  transition: all 0.5s ease-in !important;
+}
+
+.hamburger {
+  position: static;
+  z-index: 5;
+}
+.hamburger div {
+  position: relative;
+  width: 18px;
+  height: 1px;
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-list {
+  text-align: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 89px 0px;
+  z-index: 20;
+}
+.hamburger-list li {
+  color: #cdcdcd;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  z-index: 30;
+  margin: -1px 0px 20px 0px;
+  border-top: 1px solid #4a4a4a;
+}
+.hamburger-list li a {
+  display: block;
+  font-size: 18px;
+  margin: 17px 0px;
+}
+.hamburger-list li:last-child {
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.hamburger-list__item:hover ~ #container {
+  max-height: 390px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.hamburger-list__item:hover {
+  color: #9051df;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 7px;
+  background-color: #f2f2f2;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -1px;
+  background-color: #f2f2f2;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.header {
+  background: #f5f5f7;
+}
+
+.header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 227px 22px 70px 22px;
+}
+
+.header-content {
+  position: absolute;
+}
+
+.header-title {
+  font-family: "Gilroy-Bold";
+  color: #1d1d1f;
+  font-size: 70px;
+  line-height: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
+.header-title_br-none {
+  display: none;
+}
+
+.header-subtitle {
+  font-family: "Gilroy-Medium";
+  color: #7a7a7a;
+  font-size: 18px;
+  width: 52%;
+  margin: 0px 0px 38px 0px;
+}
+
+.header-button {
+  font-family: "Gilroy-Semibold";
+  color: #1d1d1f;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-button::after {
+  content: url("/img/icons/arrow-head.svg");
+  width: 18px;
+  display: block;
+  margin: 0px 0px 0px 19px;
+}
+
+.header-picture {
+  height: 100%;
+  width: 100%;
+  margin: 0px 0px 0px 26%;
+}
+
+.header-picture__img {
+  width: 1050px;
+  height: 524px;
+  background-size: 1050px 524px;
+  background-repeat: no-repeat;
+  background-image: url("/img/icons/big-image.svg");
+}
+
+.header-button_insta {
+  position: absolute;
+  right: 0;
+}
+
+.header-button_form {
+  display: block;
+}
+
+.header-button_under {
+  display: none;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.form {
+  width: 50%;
+  text-align: center;
+}
+
+.form-list {
+  visibility: visible !important;
+}
+
+.form-modal {
+  background: #1d1d1f;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 442px;
+  padding: 26px 0px 56px 0px;
+}
+
+.form-body_modal {
+  max-width: 317px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  max-width: 379px;
+  color: #f2f2f2;
+  text-align: left;
+  margin: 0px auto 30px auto;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.form-title_modal {
+  text-align: center;
+  font-size: 28px;
+}
+
+.form-input {
+  font-family: "Gilroy-Regular";
+  padding: 18px 32px;
+  height: 55px;
+  max-width: 377px;
+  font-size: 16px;
+  color: #cdcdcd;
+  background: #515151;
+  width: 100%;
+  border: none;
+  margin: 0px 0px 18px 0px;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.form-input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.form-input::-moz-placeholder {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.form-input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.form-input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.form-button {
+  font-family: "Gilroy-Semibold";
+  color: #1d1d1f;
+  font-size: 18px;
+  background: white;
+  max-width: 377px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 18px 0px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  margin: 0 auto;
+}
+
+.form-button::after {
+  content: url("/img/icons/arrow-head.svg");
+  width: 18px;
+  display: block;
+  margin: 0px 0px 0px 19px;
+}
+
+.form-button:active {
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.md-modal {
+  margin: auto;
+  position: fixed;
+  top: 57px;
+  padding: 134px 0px 0px 0px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-close {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-image: url(/img/icons/close.svg);
+  background-position: center center;
+  width: 16px;
+  height: 16px;
+  margin: 0 23px 7px auto;
+  display: block;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  -webkit-backdrop-filter: saturate(180%) blur(59px);
+  backdrop-filter: saturate(180%) blur(59px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0 !important;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(59px);
+  backdrop-filter: saturate(180%) blur(59px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.products .content {
+  padding: 200px 22px 200px 22px;
+}
+
+.products-top {
+  text-align: left;
+}
+
+.products-title {
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 100%;
+  margin: 0px 0px 15px 0px;
+}
+
+.products-title span {
+  background-color: black;
+  background-image: linear-gradient(90deg, #ec687b 4%, #da48cc 52%, #6328e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.products-subtitle {
+  font-family: "Gilroy-Medium";
+  color: #515151;
+  font-size: 18px;
+  line-height: 149%;
+}
+
+.products-content {
+  padding: 55px 0px 0px 0px;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  height: 315px;
+  border-radius: 37px;
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.07), 0px 6.26664px 34.5633px rgba(0, 0, 0, 0), 0px 3.35045px 15.4631px rgba(0, 0, 0, 0.02), 0px 1.87823px 8.03941px rgba(0, 0, 0, 0.02), 0px 0.997515px 4.36392px rgba(0, 0, 0, 0.01), 0px 0.415088px 1.97357px rgba(0, 0, 0, 0.01);
+}
+
+.swiper-title {
+  font-family: "Gilroy-Bold";
+  color: #515151;
+  font-size: 21px;
+  display: block;
+  margin: 34px 30px 16px 30px;
+  text-align: left;
+}
+
+.swiper-image {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 71%;
+}
+
+.swiper-slide_macbook {
+  background: linear-gradient(180.08deg, #fbadc5 0.07%, #ffd8c7 107.23%, #ff996a 107.23%);
+}
+
+.swiper-slide_ipad {
+  background: linear-gradient(179.92deg, #fae4dd 0.07%, #e2dcfa 99.93%);
+}
+
+.swiper-slide_airpods {
+  background: linear-gradient(180deg, #e0f5fd 0%, #e6fcde 100%);
+}
+
+.swiper-slide_iphone {
+  background: linear-gradient(158.53deg, #dde9fc 10.03%, #e0f4fd 101.55%);
+}
+
+.swiper-slide_accessories {
+  background: linear-gradient(179.92deg, #ffeec4 0.07%, #e7fadc 99.93%);
+}
+
+.swiper-slide_watch {
+  background: linear-gradient(161.14deg, #ebd2ff 10.09%, #ddeaf9 95.71%);
+}
+
+.swiper-image_macbook {
+  background-image: url(/img/icons/macbook.svg);
+}
+
+.swiper-image_ipad {
+  background-image: url(/img/icons/ipad.svg);
+}
+
+.swiper-image_airpods {
+  background-image: url(/img/icons/airpods.svg);
+}
+
+.swiper-image_iphone {
+  background-image: url(/img/icons/iphone.svg);
+}
+
+.swiper-image_accessories {
+  background-image: url(/img/icons/charge.svg);
+}
+
+.swiper-image_watch {
+  background-image: url(/img/icons/watch.svg);
+}
+
+.swiper-buttons {
+  padding: 63px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin: 0px 13px 0px 13px;
+  background: #1d1d1f;
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+.swiper-button-prev:after {
+  font-size: 0px;
+  width: 19px;
+  height: 16px;
+  content: url("/img/icons/arrow-prev.svg");
+}
+
+.swiper-button-next:after {
+  font-size: 0px;
+  width: 19px;
+  height: 16px;
+  content: url("/img/icons/arrow-next.svg");
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1d1d1f;
+  font-size: 24px;
+  background: #f2f2f2;
+}
+
+.about .content {
+  padding: 142px 22px;
+  text-align: center;
+}
+
+.about-title {
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f1aa3c), color-stop(27%, #ee8031), color-stop(99%, #eb3861));
+  background-image: -o-linear-gradient(left, #f1aa3c 0%, #ee8031 27%, #eb3861 99%);
+  background-image: linear-gradient(90deg, #f1aa3c 0%, #ee8031 27%, #eb3861 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
+  margin: 0px 0px 15px 0px;
+}
+
+.about-subtitle {
+  font-family: "Gilroy-Semibold";
+}
+
+.about-subtitle_third {
+  margin: 25px auto 0px auto;
+  max-width: 607px;
+}
+
+.secrets {
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.secrets .content {
+  padding: 31px 22px 71px 22px;
+}
+
+.secrets-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.secrets-line {
+  height: 4px;
+  background: white;
+  width: 100%;
+  border: none;
+}
+
+.secrets-top__title {
+  font-family: "Gilroy-Bold";
+  color: #1d1d1f;
+  font-size: 40px;
+  padding: 0px 13px;
+  min-width: 465px;
+}
+
+.secrets-content {
+  padding: 96px 0px 0px 0px;
+}
+
+.secrets-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.secrets-list__item {
+  margin: 0px 0px 76px 0px;
+  flex-basis: 27.3%;
+}
+
+.secrets-img_figure {
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 14px, transparent 14px) 0% 0%/15px 15px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 14px, transparent 14px) 100% 0%/15px 15px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 14px, transparent 14px) 0% 100%/15px 15px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 14px, transparent 14px) 100% 100%/15px 15px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 2px) calc(100% - 30px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 2px) no-repeat, linear-gradient(135deg, #dbdbdb 0%, rgba(235, 235, 235, 0) 100%);
+  border-radius: 15px;
+  display: flex;
+  box-sizing: content-box;
+  width: 82px;
+  height: 79px;
+}
+
+.secrets-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 48px;
+  width: 100%;
+  margin: 15px;
+}
+
+.secrets-list__title {
+  font-family: "Gilroy-Bold";
+  color: #1d1d1f;
+  font-size: 21px;
+  margin: 30px 0px 9px 0px;
+}
+
+.secrets-list__subtitle {
+  font-family: "Gilroy-Medium";
+  color: #515151;
+  font-size: 18px;
+}
+
+.secrets-img_trade {
+  background-image: url("/img/icons/trade.svg");
+}
+
+.secrets-img_price {
+  background-image: url("/img/icons/price.svg");
+}
+
+.secrets-img_product {
+  background-image: url("/img/icons/product.svg");
+}
+
+.secrets-img_help {
+  background-image: url("/img/icons/help.svg");
+}
+
+.secrets-img_support {
+  background-image: url("/img/icons/support.svg");
+}
+
+.secrets-img_guarantee {
+  background-image: url("/img/icons/guarantee.svg");
+}
+
+.service .content {
+  padding: 203px 22px 200px 22px;
+  text-align: center;
+}
+
+.service-img {
+  background-size: 90px 137px;
+  background-repeat: no-repeat;
+  background-image: url("/img/icons/service.svg");
+  background-position: center center;
+  width: 90px;
+  height: 137px;
+}
+
+.service-title {
+  font-family: "Gilroy-Bold";
+  color: #1d1d1f;
+  font-size: 60px;
+  margin: 43px 0px 15px 0px;
+  line-height: 100%;
+}
+
+.service-subtitle {
+  font-family: "Gilroy-Semibold";
+  color: #515151;
+  font-size: 21px;
+  max-width: 754px;
+  margin: 0 auto;
+  line-height: 130%;
+}
+
+.service-subtitle_span {
+  color: #1d1d1f;
+}
+
+.request {
+  background: black;
+}
+
+.request .content {
+  display: flex;
+  padding: 194px 22px 154px 22px;
+  align-items: center;
+}
+
+.request-content {
+  width: 50%;
+  padding: 0px 0px 0px 64px;
+}
+
+.request-title {
+  font-family: "Gilroy-Bold";
+  color: white;
+  font-size: 60px;
+  line-height: 100%;
+  margin: 0px 0px 8px 0px;
+}
+
+.request-subtitle {
+  background-image: linear-gradient(90deg, #ec687b 4%, #da48cc 52%, #6328e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+}
+
+.emoji {
+  background-size: 320px 315px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(/img/icons/emoji.png);
+  opacity: 1;
+  animation: ani 1.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.footer {
+  background: #f2f2f2;
+}
+
+.footer .content {
+  padding: 83px 22px 0px 22px;
+}
+
+.footer-content {
+  padding: 94px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Gilroy-Semibold";
+  font-size: 16px;
+}
+.footer-content p {
+  color: #515151;
+  margin: 4px 0px 6px 0px;
+}
+.footer-content span {
+  display: block;
+}
+
+.footer-picture {
+  top: 0;
+  position: absolute;
+}
+
+.footer-picture_mobile {
+  display: none;
+}
+
+.footer-pages {
+  text-align: left;
+}
+.footer-pages a {
+  font-size: 16px;
+}
+
+.footer-pages__link {
+  color: #1d1d1f;
+  line-height: 1.8em;
+}
+
+.footer-pages__link:hover,
+.footer-email__link:hover,
+.footer-phone__link:hover,
+.footer-adress__link:hover {
+  color: #9051df;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-email,
+.footer-adress {
+  margin: 0px 0px 27px 0px;
+}
+
+.footer-media__link {
+  display: block;
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-media__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-media__item {
+  margin: 0px 21px 0px 0px;
+}
+
+.footer-media__link_telegram {
+  background-image: url("/img/icons/telegram.svg");
+}
+
+.footer-media__link_viber {
+  background-image: url("/img/icons/viber.svg");
+}
+
+.footer-media__link_instagram {
+  background-image: url("/img/icons/insta.svg");
+}
+
+.label-for-check {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  display: none;
+}
+
+@media only screen and (max-width: 1526px) {
+  .header-picture {
+    margin: 0px 0px 0px 23%;
+  }
+  .header-title {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1455px) {
+  .header-picture {
+    margin: 0px 0px 0px 23%;
+  }
+  .header-picture__img {
+    width: 966px;
+    height: 482px;
+    background-size: 966px 482px;
+  }
+  .header-title {
+    font-size: 63px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 57px;
+  }
+  .about {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .header-title {
+    font-size: 60px;
+  }
+  .products-title,
+.about-title,
+.service-title,
+.request-title,
+.request-subtitle {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 1287px) {
+  .header-picture {
+    margin: 0px 0px 0px 19%;
+  }
+  .header-picture__img {
+    width: 917px;
+    height: 457px;
+    background-size: 917px 457px;
+    margin: 0 0 0 auto !important;
+  }
+  .header-title {
+    font-size: 56px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 51px;
+  }
+  .about {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .header-title,
+.request-title,
+.request-subtitle {
+    font-size: 51px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 46px;
+  }
+  .about {
+    font-size: 20px;
+  }
+  .secrets-top__title {
+    font-size: 35px;
+    min-width: 410px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .menu-list__phone-link {
+    margin: 0px 0px 0px 135px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .header-title,
+.request-title,
+.request-subtitle {
+    font-size: 46px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 41px;
+  }
+  .header-picture__img {
+    width: 871px;
+    height: 434px;
+    background-size: 871px 434px;
+  }
+  .header-picture {
+    margin: 0px 0px 0px 16%;
+  }
+  .swiper-slide {
+    height: 260px;
+  }
+  .swiper-image_airpods,
+.swiper-image_accessories {
+    height: 66%;
+  }
+}
+@media only screen and (max-width: 1056px) {
+  .header-title {
+    font-size: 41px;
+  }
+  .header-picture__img {
+    width: 800px;
+    height: 403px;
+    background-size: 810px 403px;
+  }
+  .header-button {
+    font-size: 16px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 36px;
+  }
+  .about {
+    font-size: 19px;
+  }
+  .menu-list__phone-link {
+    margin: 0px 0px 0px 35px;
+  }
+  .header-subtitle {
+    font-size: 17px;
+  }
+  .secrets-top__title {
+    font-size: 30px;
+    min-width: 355px;
+  }
+}
+@media only screen and (max-width: 1044px) {
+  .menu {
+    min-width: 100px;
+  }
+  .menu-list__logo-link {
+    margin: 0px 80px 0px 0px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 115px 0px 92px 0px;
+  }
+  .header-content {
+    position: static;
+    padding: 0px 12px 0px 12px;
+  }
+  .header-title {
+    display: none;
+  }
+  .header-title_br-none {
+    display: block;
+  }
+  .header-subtitle {
+    width: 100%;
+    margin: 0px auto 38px auto;
+  }
+  .header-title,
+.products-title,
+.about-title,
+.service-title {
+    margin: 30px 0px 15px 0px;
+  }
+  .header-button {
+    display: none;
+  }
+  .header-button_insta {
+    display: flex;
+  }
+  .header-button_under {
+    display: flex;
+    margin: 50px auto 0px auto;
+    font-size: 18px;
+  }
+  .header-picture {
+    margin: 0 auto;
+    height: 60vw;
+  }
+  .header-picture__img {
+    width: 100%;
+    height: 100%;
+    background-size: 125% 100%;
+  }
+  .products .content {
+    padding: 75px 22px 75px 22px;
+  }
+  .swiper-slide {
+    height: 248px;
+  }
+  .products-top {
+    text-align: center;
+  }
+  .header-subtitle,
+.products-subtitle,
+.service-subtitle,
+.about-subtitle,
+.header-button {
+    font-size: 21px;
+  }
+  .product .content,
+.about .content,
+.service .content,
+.request .content,
+.secrets .content,
+.footer .content {
+    padding: 70px 22px 70px 22px;
+  }
+  .footer-pages__item {
+    margin: 0px 0px 8px 0px;
+  }
+  .footer-email {
+    margin: 0px 0px 25px 0px;
+  }
+  .menu-list__logo-link {
+    margin: 0px 20px 0px 0px;
+  }
+  .request-content {
+    padding: 0px 0px 0px 40px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .menu-list__phone-link {
+    margin: 0px 0px 0px 0px;
+  }
+  .request-content {
+    padding: 0px 0px 0px 25px;
+  }
+  .products-content {
+    padding: 55px 10px 0px 10px;
+  }
+}
+@media only screen and (max-width: 833px) {
+  .menu .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .request-content {
+    padding: 0px 0px 0px 10px;
+  }
+  .menu-list {
+    z-index: 1;
+    display: none;
+    -webkit-overflow-scrolling: touch;
+    visibility: hidden;
+    -webkit-transition: visibility 0s linear 1s;
+    transition: visibility 0s linear 1s;
+  }
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-list__logo-link {
+    background-size: 34px 34px;
+    width: 34px;
+    height: 34px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+  }
+  .footer-picture {
+    display: none;
+    position: static;
+  }
+  .footer-picture_mobile {
+    display: block;
+  }
+  .footer-picture_img {
+    margin: 34px auto 0px auto;
+  }
+  .footer-media__item {
+    margin: 0px 16px 0px 16px;
+  }
+  .footer-pages,
+.footer-contacts,
+.footer-location,
+.footer-adress,
+.footer-social {
+    text-align: center;
+  }
+  .footer-media__list {
+    justify-content: center;
+  }
+  .foooter-media_item {
+    margin: 0px 13px 0px 13px;
+  }
+  .footer-pages {
+    margin: 0px 0px 44px 0px;
+  }
+  .secrets-list__item {
+    margin: 0px 0px 76px 0px;
+    flex-basis: 47.3%;
+  }
+  .request .content {
+    display: block;
+  }
+  .request-content,
+.form {
+    width: 100%;
+    text-align: center;
+  }
+  .form-title {
+    margin: 60px auto 30px auto;
+    text-align: center;
+  }
+  .form-button {
+    margin: 0 auto 0 auto;
+  }
+  .form-input {
+    margin: 0px 0px 15px 0px;
+  }
+  .secrets-top__title {
+    font-size: 27px;
+    min-width: 323px;
+  }
+  .swiper-title {
+    margin: 20px 30px 16px 30px;
+  }
+  .swiper-slide {
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .header-subtitle,
+.request-content {
+    width: 100%;
+  }
+  .form-title {
+    font-size: 22px;
+  }
+  .footer-picture_img {
+    margin: 60px auto 0px auto;
+  }
+  .footer-adress {
+    max-width: 153px;
+    margin: 0px auto 27px auto;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+    visibility: hidden;
+  }
+  .request-content {
+    text-align: center;
+    padding: 0px;
+  }
+  .request-content p {
+    margin: 0px auto 54px auto;
+  }
+  .header-subtitle,
+.products-subtitle,
+.service-subtitle,
+.about-subtitle,
+.header-button {
+    font-size: 18px;
+  }
+  .secrets-list__item:nth-child(4),
+.secrets-list__item:nth-child(6) {
+    display: none;
+  }
+  .form-title {
+    text-align: center;
+  }
+  .md-modal {
+    padding: 0px;
+  }
+  .form-modal {
+    background: none;
+  }
+  .swiper-slide {
+    height: 260px;
+  }
+  .swiper-image {
+    height: 78%;
+  }
+  .swiper-image_airpods,
+.swiper-image_accessories {
+    height: 72%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .request-title,
+.request-subtitle {
+    font-size: 40px;
+  }
+  .secrets-top__title {
+    font-size: 24px;
+    min-width: 290px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .swiper-slide {
+    height: 220px;
+  }
+  .swiper-image {
+    height: 71%;
+  }
+  .swiper-image_airpods,
+.swiper-image_accessories {
+    height: 66%;
+  }
+}
+@media only screen and (max-width: 463px) {
+  .header-title {
+    font-size: 35px;
+  }
+  .products-title,
+.about-title,
+.service-title {
+    font-size: 30px;
+  }
+  .header-picture {
+    height: 74vw;
+  }
+  .header-picture__img {
+    background-size: 153% 100%;
+  }
+  .header-subtitle,
+.products-subtitle,
+.service-subtitle,
+.about-subtitle,
+.header-button {
+    font-size: 16px;
+  }
+  .secrets-top__title {
+    font-size: 22px;
+    min-width: 268px;
+  }
+  .secrets-list__subtitle {
+    font-size: 16px;
+  }
+  .secrets-list__title {
+    font-size: 18px;
+  }
+  .secrets-img_figure {
+    width: 64px;
+    height: 61px;
+  }
+  .secrets-img {
+    height: 38px;
+    margin: 11px;
+  }
+  .request-title,
+.request-subtitle {
+    font-size: 35px;
+  }
+  .form-title {
+    font-size: 18px;
+  }
+  .swiper-title {
+    margin: 20px 30px 6px 30px;
+  }
+  .swiper-slide {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .swiper-slide {
+    height: 290px;
+  }
+  .swiper-image {
+    height: 86%;
+  }
+  .swiper-image_airpods,
+.swiper-image_accessories {
+    height: 76%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .footer-picture {
+    display: block;
+  }
+  .footer-picture_mobile {
+    display: none;
+  }
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-content {
+    padding: 0px 0px;
+  }
+  .secrets-list__subtitle {
+    font-size: 14px;
+  }
+  .footer-pages {
+    margin: 0px;
+  }
+  .footer-content p {
+    margin: 27px 0px 7px 0px;
+  }
+  .footer-media p {
+    margin: 27px 0px 12px 0px;
+  }
+  .footer-picture_img {
+    background-size: 61px 61px;
+    width: 61px;
+    height: 61px;
+    margin: 0px auto 38px auto;
+  }
+  .secrets-top__title {
+    font-size: 20px;
+    min-width: 246px;
+  }
+}
