@@ -603,7 +603,7 @@ body {
   margin: 0px 100px 0px 0px;
   background-size: 42px 42px;
   background-repeat: no-repeat;
-  background-image: url(".../img/icons/logo.svg");
+  background-image: url("../img/icons/logo.svg");
   background-position: center center;
   width: 42px;
   height: 42px;
@@ -806,7 +806,7 @@ body {
 }
 
 .header-button::after {
-  content: url(".../img/icons/arrow-head.svg");
+  content: url("../img/icons/arrow-head.svg");
   width: 18px;
   display: block;
   margin: 0px 0px 0px 19px;
@@ -951,7 +951,7 @@ body {
 }
 
 .form-button::after {
-  content: url(".../img/icons/arrow-head.svg");
+  content: url("../img/icons/arrow-head.svg");
   width: 18px;
   display: block;
   margin: 0px 0px 0px 19px;
